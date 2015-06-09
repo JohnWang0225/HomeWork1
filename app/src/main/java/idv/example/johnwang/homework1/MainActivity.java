@@ -22,6 +22,13 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViews();
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                tvResult.setText(Result());
+            }
+        });
     }
 
     private void findViews() {
@@ -30,24 +37,21 @@ public class MainActivity extends ActionBarActivity {
         cbSave = (CheckBox) findViewById(R.id.cbSave);
         tvResult = (TextView) findViewById(R.id.tvResult);
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
+    }
 
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String name = etName.getText().toString();
-                String phone = etPhone.getText().toString();
-                String cbResult;
-                String result;
+    private String Result() {
+        String name = etName.getText().toString();
+        String phone = etPhone.getText().toString();
+        String cbResult;
+        String result;
 
-                if (cbSave.isChecked()) {
-                    cbResult = getString(R.string.save);
-                } else {
-                    cbResult = " ";
-                }
-                result = getString(R.string.name) + name + "\n" + getString(R.string.phone) + phone + "\n" + cbResult;
-                tvResult.setText(result);
-            }
-        });
+        if (cbSave.isChecked()) {
+            cbResult = getString(R.string.save);
+        } else {
+            cbResult = " ";
+        }
+        result = getString(R.string.name) + name + "\n" + getString(R.string.phone) + phone + "\n" + cbResult;
+        return result;
     }
 
     @Override
