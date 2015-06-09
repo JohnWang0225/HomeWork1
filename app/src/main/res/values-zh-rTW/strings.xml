@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HomeWork1</string>
+
+    <string name="input_name">請輸入姓名: </string>
+    <string name="input_phone">請輸入電話: </string>
+    <string name="save_info">儲存資料</string>
+    <string name="submit">送出</string>
+    <string name="input_name_hint">輸入您的姓名</string>
+    <string name="input_phone_hint">輸入您的電話</string>
+    <string name="name">姓名: </string>
+    <string name="phone">電話: </string>
+    <string name="save">資料已儲存。</string>
+</resources>

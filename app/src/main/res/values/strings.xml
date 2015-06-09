@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HomeWork1</string>
+
+    <string name="input_name">Input your name here: </string>
+    <string name="input_phone">Input your phone here: </string>
+    <string name="save_info">Save my information</string>
+    <string name="submit">Submit</string>
+    <string name="input_name_hint">int put your name</string>
+    <string name="input_phone_hint">int put your phone</string>
+    <string name="name">Name: </string>
+    <string name="phone">phone: </string>
+    <string name="save">The data is Saved.</string>
+</resources>
